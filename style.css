@@ -606,8 +606,11 @@ nav .mobile-menu .item a:hover {
 
 @media (max-width: 600px) {
 
+    header .title {
+        width: 70%;
+    }
     .element {
-        font-size: 29px;
+        font-size: 23px;
     }
     h1 {
         font-size: 29px;
