@@ -7,10 +7,20 @@
     padding: 0;
 }
 
+:root {
+    --color-1: #0b8a79;
+    --color-1-alt: #0a7567;
+    --color-2: #29335C;
+    --color-3: #DB2B39;
+    --color-4: #F3A712;
+    --color-5: #FBF5F3;
+    --color-6: #212227;
+}
+
 h1 {
     color: #f1eeee;
     font-size: 55px;
-    background: -webkit-linear-gradient(#0b8a79, #0b8a79, #3e33db);
+    background: -webkit-linear-gradient(var(--color-1), var(--color-1), var(--color-2));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -18,7 +28,7 @@ h1 {
 
 a {
     text-decoration: none;
-    color: #0b8a79;
+    color: var(--color-1);
 }
 
 button {
@@ -32,18 +42,25 @@ ul {
 }
 
 body {
-    background: #eee3e3;
-    color: #333;
+    background: var(--color-5);
+    color: var(--color-6);
 }
 
-.logo {
-    font-weight: 600;
+.logo a {
+    width: 100%;
+}
+
+.logo img {
+    width: 90px;
 }
 
 nav {
     height: 60px;
-    background-color: #eee3e3;
-    border-bottom: 1px solid #c7c6c6;
+    background-color: var(--color-5);
+    border-bottom: 1px solid var(--color-5);
+    position: fixed;
+    margin: auto;
+    width: 100%;
 }
 
 nav .container {
@@ -68,18 +85,18 @@ nav .menu li a {
 }
 
 nav .menu li a:hover {
-    border-bottom: 2px solid #0b8a79;
+    border-bottom: 2px solid var(--color-1);
 }
 
 nav .menu .active {
-    border-bottom: 2px solid #0b8a79;
+    border-bottom: 2px solid var(--color-1);
 }
 
 header .title {
     width: 60%;
     margin: auto;
     text-align: center;
-    padding: 120px 0;
+    padding: 200px 0 120px 0;
 }
 
 header .title p {
@@ -90,18 +107,18 @@ header .title p {
 }
 
 header .title .portfolio {
-    background-image: linear-gradient(to bottom, #0b8a79, #0b8a79);
+    background-image: linear-gradient(to bottom, var(--color-1), var(--color-1));
     color: #f1eeee;
     padding: 7px 12px;
     border-radius: 8px;
     border: none;
-    border: 3px solid #0b8a79;
+    border: 3px solid var(--color-1);
     font-weight: 600;
 }
 
 header .title .contato {
-    border: 3px solid #0b8a79;
-    color: #0b8a79;
+    border: 3px solid var(--color-1);
+    color: var(--color-1);
     padding: 7px 12px;
     border-radius: 8px;
     font-weight: 600;
@@ -126,10 +143,10 @@ header .title hgroup h3 {
 }
 
 .element {
-    display: inline-block;
     height: 70px;
-    color: rgb(39, 38, 38);
+    color: var(--color-6);
     margin-top: 5px;
+    font-size: 33px;
 }
 
 .section-title {
@@ -149,12 +166,12 @@ header .title hgroup h3 {
 }
 
 .section-title span {
-    color: #0b8a79;
+    color: var(--color-1);
 }
 
 .section-title::before {
     content: 'Nanana';
-    color: #0b8a79;
+    color: var(--color-1);
     font-weight: 600;
     text-transform: none;
     font-family: 'Courgette', sans-serif;
@@ -176,13 +193,13 @@ header .title hgroup h3 {
     padding: 4px 8px;
     border-radius: 6px;
     margin: 0 3px;
-    border: 2px solid #0b8a79;
-    background-color: #0b8a79;
+    border: 2px solid var(--color-1);
+    background-color: var(--color-1)
 }
 
 .portfolio .portfolio-menu ul .active {
-    border: 2px solid #0b8a79;
-    color: #0b8a79;
+    border: 2px solid var(--color-1);
+    color: var(--color-1);
     background-color: transparent;
 }
 
@@ -194,11 +211,11 @@ header .title hgroup h3 {
 
 .projetos .projeto {
     width: 31%;
-    background-color: white;
+    background-color: var(--color-5);
     height: 200px;
     margin: 15px 0;
     cursor: pointer;
-    box-shadow: 4px 4px 10px #0000002d;
+    box-shadow: 4px 4px 10px var(--color-6);
 }
 
 .projetos .projeto img {
@@ -207,10 +224,38 @@ header .title hgroup h3 {
 }
 
 footer {
-    background: #333;
+    background: var(--color-6);
     width: 100%;
     height: 300px;
     padding: 50px 0;
+}
+
+.social-icons {
+    margin: 20px 0;
+}
+
+.social-icons span {
+    background-color: var(--color-1);
+    position: relative;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.social-icons span .bx {
+    color: var(--color-5);
+    font-size: 17px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.social-icons span:hover {
+    background-color: var(--color-1-alt);
 }
 
 @media (max-width: 600px) {

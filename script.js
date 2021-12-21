@@ -1,5 +1,5 @@
 var options = {
-  strings: ['Web Designer...', 'Desenvolvedor Web...', 'Desenvolvedor Front End'],
+  strings: [ 'Desenvolvedor Front End', 'Web Designer', 'Desenvolvedor Web'],
   typeSpeed: 85,
   loop: true,
   startDelay: 1000,
