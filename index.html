@@ -9,19 +9,30 @@
     <title>Portfólio - Johnny Vasconcelos</title>
 </head>
 <body>
-    <header>
+    <header id="home">
         <nav>
             <div class="container">
             <div class="logo">
                 <a href="#"><img src="imagens/johnny.png"></a>
             </div>
             <ul class="menu">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Portfólio</a></li>
-                <li><a href="#">Habilidades</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#contact">Contato</a></li>
             </ul>
+            <button class="mobile-button">
+                <i class="bx bx-menu"></i>
+            </button>
+            <div class="mobile-menu">
+                <i class="bx bx-x"></i>
+                <div class="item"><a href="#home">Home</a></div>
+                <div class="item"><a href="#sobre">Sobre</a></div>
+                <div class="item"><a href="#portfolio">Portfólio</a></div>
+                <div class="item"><a href="#skills">Habilidades</a></div>
+                <div class="item"><a href="#contact">Contato</a></div>
+            </div>
         </div>
         </nav>
         <div class="title">
@@ -45,72 +56,192 @@
     </header>
 
 
-    <section class="about space">
-        <div class="section-title">
-            <h2>SOBRE <span>MIM</span></h2>
-        </div>
-    </section>
-
-    <section class="portfolio space">
+    <section class="portfolio space" id="portfolio">
         <div class="section-title">
             <h2>Meu <span>Portfólio</span></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, consequuntur quidem soluta enim, assumenda libero qui animi odio magnam nesciunt rerum omnis incidunt ut perspiciatis hic? Harum quo sed odio?</p>
         </div>
         <div class="container">
-            <header class="portfolio-menu">
-                <ul>
-                    <li class="active">Todos</li>
-                    <li>Websites</li>
-                    <li>Ecommerces</li>
-                    <li>Sistemas</li>
-                </ul>
-            </header>
-            <div class="projetos">
-                <div class="projeto">
+            <div class="works">
+                <div class="work">
+                    <div class="image">
+                        <span><i class='bx bx-paperclip'></i></span>
                     <img src="imagens/website1.jpg">
                 </div>
-                <div class="projeto">
+                    <h3>Bom de Garfo</h3>
+                    <p>Site Institucional</p>
+                </div>
+                <div class="work">
+                    <div class="image">
+                        <span><i class='bx bx-paperclip'></i></span>
                     <img src="imagens/website2.jpg">
                 </div>
-                <div class="projeto">
+                    <h3>São Germano</h3>
+                    <p>Site Institucional</p>
+                </div>
+                <div class="work">
+                    <div class="image">
+                        <span><i class='bx bx-paperclip'></i></span>
                     <img src="imagens/website3.jpg">
                 </div>
-                <div class="projeto">
+                    <h3>Autonomia Fashion</h3>
+                    <p>Tema Blogger</p>
+                </div>
+                <div class="work">
+                    <div class="image">
+                        <span><i class='bx bx-paperclip'></i></span>
                     <img src="imagens/website4.jpg">
                 </div>
-                <div class="projeto">
+                    <h3>Zana Fashion</h3>
+                    <p>Loja Virtual</p>
+                </div>
+                <div class="work">
+                    <div class="image">
+                        <span><i class='bx bx-paperclip'></i></span>
                     <img src="imagens/website5.jpg">
                 </div>
-                <div class="projeto">
+                    <h3>Lar Móveis</h3>
+                    <p>Loja Virtual</p>
+                </div>
+                <div class="work">
+                    <div class="image">
+                        <span><i class='bx bx-paperclip'></i></span>
                     <img src="imagens/website6.jpg">
                 </div>
-                <div class="projeto">
+                    <h3>Bahammas</h3>
+                    <p>Tema WordPress</p>
+                </div>
+                <div class="work">
+                    <div class="image">
+                        <span><i class='bx bx-paperclip'></i></span>
                     <img src="imagens/website7.jpg">
                 </div>
-                <div class="projeto">
-                    <img src="imagens/website8.jpg">
+                    <h3>Ana Amaral</h3>
+                    <p>Portfólio</p>
                 </div>
-                <div class="projeto">
+                <div class="work">
+                    <div class="image">
+                        <span><i class='bx bx-paperclip'></i></span>
+                        <img src="imagens/website8.jpg">
+                    </div>
+                    <h3>Aquarius</h3>
+                    <p>Site Institucional</p>
+                </div>
+                <div class="work">
+                    <div class="image">
+                        <span><i class='bx bx-paperclip'></i></span>
                     <img src="imagens/website9.jpg">
+                </div>
+                    <h3>Painel Adm</h3>
+                    <p>Loja Virtual</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="skills space">
+    <section class="skills space" id="skills">
         <div class="section-title">
-            <h2>MINHAS <span>HABILIDADES</span></h2>
+            <h2>MINHAS <span>EXPERTISES</span></h2>
+        </div>
+        <div class="container">
+
+
+            <div class="skill html">
+                <div class="barra">
+                    <h3>HTML/CSS</h3>
+                    <p class="numero">90%</p>
+                </div></div>
+    
+
+                <div class="skill php">
+                <div class="barra">
+                    <h3>PHP</h3>
+                    <p class="numero">70%</p>
+                </div></div>
+
+
+                    <div class="skill wordpress">
+                        <div class="barra">
+                            <h3>WordPress</h3>
+                            <p class="numero">70%</p>
+                        </div></div>
+
+
+                <div class="skill angular">
+                <div class="barra">
+                    <h3>Angular</h3>
+                    <p class="numero">60%</p>
+                </div></div>
+
+                <div class="skill javascript">
+                    <div class="barra">
+                        <h3>JavaScript</h3>
+                        <p class="numero">70%</p>
+                    </div></div>
+
+                <div class="skill mysql">
+                <div class="barra">
+                    <h3>MySQL</h3>
+                    <p class="numero">60%</p>
+                </div></div>
+
+
+                <div class="skill xml">
+                    <div class="barra">
+                        <h3>XML</h3>
+                        <p class="numero">80%</p>
+                    </div>
+                </div>
+
+
+                <div class="skill bootstrap">
+                    <div class="barra">
+                        <h3>BootStrap</h3>
+                        <p class="numero">70%</p>
+                    </div></div>
+
+
         </div>
     </section>
 
 
-    <section class="contact space">
+    <section class="contact space" id="contact">
         <div class="section-title">
             <h2>ENTRE EM <span>CONTATO</span></h2>
+        </div>
+        <div class="container">
+            <form action="form.php" class="form" method="post">
+                <input type="text" placeholder="Nome" class="nome" required>
+                <input type="email" placeholder="Email" class="email" required>
+                <input type="text" placeholder="Projeto" class="projeto">
+                <textarea placeholder="Mensagem" class="mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="dados">
+                <h3>Contato</h3>
+                <p>(18) 99782-6451</p>
+                    <p>(18) 99782-6451</p>
+<br>
+<h3>E-mail</h3>
+<p>servico@johnnyvasconcelos.com</p>
+<p>contato@johnnyvasconcelos.com</p>
+<br>
+<h3>Local</h3>
+<p>Presidente Prudente</p>
+<p>São Paulo - Brasil</p>
+            </div>
         </div>
     </section>
 
     <footer class="space">
+        <div class="container">
+        <p>&copy;Todos os Direitos Reservados | Desenvolvido por <a href="#">J. Vasconcelos</a></p>
+        <div class="social-icons-footer">
+            <span><i class="bx bxl-instagram"></i></span>
+            <span><i class="bx bxl-linkedin"></i></span>
+            <span><i class="bx bxl-github"></i></span>
+            <span><i class="bx bxl-whatsapp"></i></span>
+        </div>
+    </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="script.js"></script>
