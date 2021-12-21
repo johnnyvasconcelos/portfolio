@@ -341,7 +341,7 @@ footer {
 footer p {
     color: var(--color-5);
     display: block;
-    margin: 20px auto;
+    margin: 25px auto;
     text-align: center;
 }
 
@@ -350,7 +350,7 @@ footer p a {
 }
 
 .social-icons-footer {
-    margin: auto;
+    margin: 15px auto;
     text-align: center;
 }
 
