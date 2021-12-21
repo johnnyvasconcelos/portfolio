@@ -784,7 +784,7 @@ margin: auto;
     }
 }
 
-@media (max-width: 920px) {
+@media (max-width: 1000px) {
     h1 {
         font-size: 43px;
     }
