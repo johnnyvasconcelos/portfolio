@@ -80,7 +80,7 @@ nav .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid brown;
+    border: 2px solid purple;
 }
 
 .container {
@@ -604,7 +604,7 @@ nav .mobile-menu .item a:hover {
 
 @media (max-width: 600px) {
     h1 {
-        font-size: 40px;
+        font-size: 34px;
     }
     .container {
         max-width: 90%;
@@ -647,11 +647,15 @@ footer {
     footer p {
 text-align: center;
     }
+
+    .contact .container form input {
+        width: 75%;
+    }
 }
 
 @media (max-width: 920px) {
     h1 {
-        font-size: 45px;
+        font-size: 43px;
     }
     .container {
         max-width: 90%;
