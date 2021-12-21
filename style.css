@@ -341,7 +341,8 @@ footer {
 footer p {
     color: var(--color-5);
     display: block;
-    margin: 20px 0;
+    margin: 20px auto;
+    text-align: center;
 }
 
 footer p a {
@@ -604,6 +605,86 @@ nav .mobile-menu .item a:hover {
     color: var(--color-1-light);
 }
 
+.cabecalho {
+    font-size: 26px;
+    color: var(--color-1-alt);
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.images .container img {
+width: 80%;
+display: block;
+margin: auto;
+}
+
+.images .responsivo {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    height: 350px;
+    margin-top: 130px;
+}
+
+.images .responsivo .tablet {
+    width: 67%;
+}
+
+.images .responsivo .tablet img {
+    width: 100%;
+    height: 100%;
+}
+
+.images .responsivo .mobile {
+    width: 32%;
+}
+.images .responsivo .mobile img {
+    width: 100%;
+    height: 100%;
+    height: 100%;
+}
+.info {
+    font-size: 14px;
+    margin-bottom: 60px;
+}
+
+.info span {
+    color: var(--color-1);
+    font-weight: 600;
+}
+
+.apresentation {
+    margin: 160px 0 80px 0;
+}
+
+.apresentation .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.apresentation .container .words {
+    width: 60%;
+}
+
+.apresentation .container .view {
+    width: 40%;
+    overflow: hidden;
+    padding: 15px;
+    background: #fff;
+    height: 100%;
+}
+
+.apresentation .container .view .image {
+    width: 100%;
+}
+
+.apresentation .container .view img {
+    width: 100%;
+}
+
 @media (max-width: 600px) {
 
     header .title {
@@ -653,12 +734,49 @@ nav .mobile-menu .item a:hover {
 footer {
     padding-bottom: 100px;
 }
-    footer p {
+    footer .container p {
 text-align: center;
+display: block;
+margin: auto;
     }
 
     .contact .container form input, .contact .container form textarea {
         width: 75%;
+    }
+
+    .apresentation .words .cabecalho h2 {
+        font-size: 26px;
+    }
+
+    .apresentation .container {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .apresentation .container .view {
+        width: 80%;
+    }
+
+    .apresentation .container .view .image {
+        width: 95%;
+    }
+
+    .apresentation .container .view .image img {
+        width: 100%;
+    }
+
+    .images .responsivo {
+        flex-direction: column;
+        height: 510px;
+        overflow: auto;
+    }
+
+    .images .responsivo .tablet {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    .images .responsivo .mobile {
+        width: 100%;
     }
 }
 
