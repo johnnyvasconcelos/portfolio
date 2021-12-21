@@ -80,7 +80,7 @@ nav .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 2px solid purple;
+    border: 2px solid orange;
 }
 
 .container {
@@ -603,8 +603,12 @@ nav .mobile-menu .item a:hover {
 }
 
 @media (max-width: 600px) {
+
+    .element {
+        font-size: 29px;
+    }
     h1 {
-        font-size: 34px;
+        font-size: 29px;
     }
     .container {
         max-width: 90%;
