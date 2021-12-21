@@ -733,7 +733,7 @@ margin: auto;
         width: 100%;
     }
 footer {
-    padding-bottom: 60px;
+    padding-bottom: 50px;
 }
     footer .container p {
 text-align: center;
@@ -768,7 +768,7 @@ margin: auto;
 
     .images .responsivo {
         flex-direction: column;
-        height: 510px;
+        height: 525px;
         overflow: auto;
     }
 
