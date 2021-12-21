@@ -667,6 +667,7 @@ margin: auto;
 
 .apresentation .container .words {
     width: 60%;
+    padding-right: 35px;
 }
 
 .apresentation .container .view {
@@ -777,6 +778,9 @@ margin: auto;
     }
     .images .responsivo .mobile {
         width: 100%;
+    }
+    .apresentation .container .words {
+        padding-right: 0;
     }
 }
 
