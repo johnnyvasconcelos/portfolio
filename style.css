@@ -80,7 +80,6 @@ nav .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 2px solid orange;
 }
 
 .container {
@@ -652,7 +651,7 @@ footer {
 text-align: center;
     }
 
-    .contact .container form input {
+    .contact .container form input, .contact .container form textarea {
         width: 75%;
     }
 }
