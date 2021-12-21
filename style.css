@@ -80,6 +80,7 @@ nav .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: 1px solid brown;
 }
 
 .container {
@@ -602,6 +603,9 @@ nav .mobile-menu .item a:hover {
 }
 
 @media (max-width: 600px) {
+    h1 {
+        font-size: 40px;
+    }
     .container {
         max-width: 90%;
     }
@@ -620,7 +624,7 @@ nav .mobile-menu .item a:hover {
     }
 
     .portfolio .container .works .work .image {
-        height: 350px;
+        height: 250px;
     }
 
     .skills .container .skill {
@@ -645,7 +649,10 @@ text-align: center;
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 920px) {
+    h1 {
+        font-size: 45px;
+    }
     .container {
         max-width: 90%;
     }
