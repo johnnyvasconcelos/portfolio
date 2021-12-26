@@ -269,7 +269,7 @@ header .title hgroup h3 {
     opacity: 1;
 }
 
-.portfolio .works .work img {
+.portfolio .works .work .img {
     border-radius: 15px;
     width: 100%;
     opacity: 1;
@@ -277,7 +277,7 @@ header .title hgroup h3 {
     transition: 0.3s;
 }
 
-.portfolio .works .work img:hover {
+.portfolio .works .work .img:hover {
     opacity: 0.35;
     transform: scale(104%);
 }
@@ -305,7 +305,7 @@ header .title hgroup h3 {
     background-color: white;
 }
 
-.portfolio .works .work img:hover span {
+.portfolio .works .work .img:hover span {
     opacity: 1;
 }
 
@@ -318,9 +318,16 @@ header .title hgroup h3 {
 opacity: 1;
 }
 
-.portfolio .works .work span:hover .work img {
+.portfolio .works .work span:hover .work .img {
     opacity: 0.35;
     transform: scale(104%);
+}
+
+.portfolio .works .work span:hover .work .img.img9 {
+    background: url('imagens/website9.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
 }
 
 footer {
