@@ -248,7 +248,7 @@ header .title hgroup h3 {
     width: 100%;
     margin-bottom: 10px;
     border-radius: 15px;
-    background: var(--color-1);
+    background: var(--color-5);
     z-index: 1000;
     height: 185px;
     overflow: hidden;
@@ -258,9 +258,10 @@ header .title hgroup h3 {
 
 .portfolio .works .work .image:hover {
     box-shadow: 3px 3px 4px rgba(0,0,0,.4);
+    background-color: var(--color-1);
 }
 
-.portfolio .works .work .image:hover img {
+.portfolio .works .work .image:hover .img {
     opacity: 0.35;
     transform: scale(104%);
 }
@@ -275,6 +276,9 @@ header .title hgroup h3 {
     opacity: 1;
     height: 100%;
     transition: 0.3s;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
 }
 
 .portfolio .works .work .img:hover {
@@ -309,12 +313,16 @@ header .title hgroup h3 {
     opacity: 1;
 }
 
+.portfolio .works .work a:hover .img span {
+    opacity: 1;
+}
+
 .portfolio .works .work span .bx {
     color: var(--color-1);
     font-size: 20px;
 }
 
-.portfolio .works .work span:hover {
+.portfolio .works .work span:hover .img {
 opacity: 1;
 }
 
@@ -323,12 +331,69 @@ opacity: 1;
     transform: scale(104%);
 }
 
-.portfolio .works .work span:hover .work .img.img9 {
+.portfolio .works .work .img-1 {
+    background: url('imagens/website1.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.portfolio .works .work .img-2 {
+    background: url('imagens/website2.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.portfolio .works .work .img-3 {
+    background: url('imagens/website3.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.portfolio .works .work .img-4 {
+    background: url('imagens/website4.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.portfolio .works .work .img-5 {
+    background: url('imagens/website5.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.portfolio .works .work .img-6 {
+    background: url('imagens/website6.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.portfolio .works .work .img-7 {
+    background: url('imagens/website7.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.portfolio .works .work .img-8 {
+    background: url('imagens/website8.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.portfolio .works .work .img-9 {
     background: url('imagens/website9.jpg');
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
 }
+
 
 footer {
     background: var(--color-6);
@@ -724,6 +789,11 @@ margin: auto;
     .portfolio .container .works .work .image {
         height: 240px;
     }
+
+    .portfolio .container .works .work .image span:hover {
+        height: 240px;
+    }
+
 
     .skills .container .skill {
         width: 100%;
