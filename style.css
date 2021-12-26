@@ -779,6 +779,7 @@ margin: auto;
         text-align: center;
         justify-content: center;
         flex-direction: column;
+        border: 2px solid orange;
     }
 
     .portfolio .container .works .work {
