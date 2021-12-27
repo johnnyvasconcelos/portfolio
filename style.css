@@ -274,7 +274,6 @@ header .title hgroup h3 {
     border-radius: 15px;
     width: 100%;
     opacity: 1;
-    border: 3px solid blue;
     height: 100%;
     transition: 0.3s;
     background-size: cover;
