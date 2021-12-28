@@ -735,6 +735,7 @@ margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 320px;
 }
 
 .apresentation .container .words {
@@ -747,15 +748,19 @@ margin: auto;
     overflow: hidden;
     padding: 15px;
     background: #fff;
-    height: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .apresentation .container .view .image {
     width: 100%;
 }
 
-.apresentation .container .view img {
+.apresentation .container .view video {
     width: 100%;
+    height: 100%;
 }
 
 @media (max-width: 600px) {
