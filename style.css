@@ -270,6 +270,23 @@ header .title hgroup h3 {
     opacity: 1;
 }
 
+.smartphone {
+    width: 300px;
+    height: 100%;
+    background: url('imagens/sao-germano-mobile.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    overflow: hidden;
+    transition: 23s;
+    overflow: hidden;
+    background-position: top center;
+}
+
+.smartphone:hover {
+    background-position: bottom center;
+}
+
 .portfolio .works .work .img {
     border-radius: 15px;
     width: 100%;
@@ -702,6 +719,7 @@ margin: auto;
 
 .images .responsivo .tablet {
     width: 67%;
+    padding: 0 15px;
 }
 
 .images .responsivo .tablet img {
@@ -711,6 +729,9 @@ margin: auto;
 
 .images .responsivo .mobile {
     width: 32%;
+    overflow: hidden;
+    border: 1em solid #2f2f2f;
+    border-radius: 15px;
 }
 .images .responsivo .mobile img {
     width: 100%;
