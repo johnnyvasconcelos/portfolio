@@ -111,9 +111,6 @@ body:after {
   .form-control:-moz-placeholder {
     /* Firefox 18- */
     color: rgba(255, 255, 255, 0.5); }
-.carddd {
- margin-left: 20px!important;
-}
 .site-section {
   padding: 2.5em 0;}
   @media (min-width: 768px) {
