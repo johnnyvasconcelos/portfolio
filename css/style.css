@@ -856,6 +856,11 @@ a.text-dark:hover {
       .card-dest {
         transform: scale(108%);
       }
+      @media (max-width: 1000px) {
+        .card-dest {
+          transform: scale(100%);
+        }
+      }
 
 .blog_entry img {
   border-top-left-radius: 4px;
