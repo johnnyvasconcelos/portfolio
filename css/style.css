@@ -60,6 +60,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #6c757d;
+  scroll-behavior: auto!important;
   text-align: left;
   background-color: #ffffff;
 }
@@ -3287,6 +3288,41 @@ input[type="button"].btn-block {
 
 .bg-2 {
   background-color: #038dff!important;
+}
+
+.menu-mobile {
+  background-color: white;
+  top: 75px;
+  width: 100%;
+  margin: 0;
+  left: 0;
+  height: 0px!important;
+  overflow: hidden;
+  transition: 0.2s;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.menu-mobile.showMenu, .showMenu {
+  height: 310px!important;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.menu-mobile ul {
+  list-style: none;
+}
+
+.menu-mobile ul li {
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+
+.menu-mobile ul li a {
+  color: var(--indigo);
+  text-decoration: none;
 }
 
 .btn a {

@@ -130,4 +130,25 @@ botao.addEventListener('click', function() {
 })
 }
 
+function showMenu() {
+    let buttonn = document.querySelector('#navButton')
+    let menuItem = document.querySelectorAll('.mobileItem')
+    menuItem[0].addEventListener('click', closeMenu)
+    menuItem[1].addEventListener('click', closeMenu)
+    menuItem[2].addEventListener('click', closeMenu)
+    menuItem[3].addEventListener('click', closeMenu)
+    menuItem[4].addEventListener('click', closeMenu)
+    menuItem[5].addEventListener('click', closeMenu)
+    buttonn.addEventListener('click', openMenu)
+    function openMenu() {
+       let menuMobile = document.querySelector('.menu-mobile')
+       menuMobile.classList.toggle('showMenu')
+    }
+    function closeMenu() {
+        let menuMobile = document.querySelector('.menu-mobile')
+       menuMobile.classList.remove('showMenu')
+    }
+}
+
 ocultar()
+showMenu()

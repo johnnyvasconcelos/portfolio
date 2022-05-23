@@ -9,9 +9,8 @@
     <meta content="Free HTML Templates" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
@@ -34,7 +33,7 @@
         <a href="index.html" class="navbar-brand ml-lg-3">
             <h1 class="m-0 display-5"><span class="text-primary">Johnny</span>Vas</h1>
         </a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <button type="button" id="navButton" class="navbar-toggler" data-toggle="colapse" data-target="#navbarColapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
@@ -47,6 +46,16 @@
                 <a href="#contact" class="nav-item nav-link">Pacotes</a>
             </div>
             <a href="https://api.whatsapp.com/send?phone=5518996749948" target="_blank" class="btn d-none d-lg-block">Contato</a>
+        </div>
+        <div class="d-block position-fixed menu-mobile">
+            <ul>
+                <li class="mobileItem"><a href="#home">Home</a></li>
+                <li class="mobileItem"><a href="#about">Sobre</a></li>
+                <li class="mobileItem"><a href="#skill">Habilidades</a></li>
+                <li class="mobileItem"><a href="#service">Serviços</a></li>
+                <li class="mobileItem"><a href="#portfolio">Portfólio</a></li>
+                <li class="mobileItem"><a href="#contact">Pacotes</a></li>
+            </ul>
         </div>
     </nav>
     <!-- Navbar End -->
@@ -115,7 +124,7 @@
                 -->
                 <div class="col-lg-12">
                     <h3 class="mb-4">Web Designer & Desenvolvedor Web</h3>
-                    <p class="paragrafo">Sou Desenvolvedor Freelancer com experiência em JavaScript, PHP, Vue JS, Node e WordPress. Sou o fundador da Evelore Web Design Agency. Foco principalmente na parte do Front End criando sites, lojas e sistemas para a web. Posso te ajudar a alcançar mais resultados no Digital com sites Responsivos e Otimizados com Alta Qualidade e Performance.</p>
+                    <p class="paragrafo">Sou Desenvolvedor Freelancer com experiência em JavaScript, PHP, Vue JS, Node e WordPress. Sou o fundador da Evelore Web Design Agency. Foco principalmente no Front End criando sites, lojas e sistemas para web. Posso te ajudar a alcançar mais resultados no Digital com sites Responsivos e Otimizados de Alta Qualidade e Performance.</p>
                     <div class="row mb-3 dados">
                         <div class="col-sm-6 py-2"><h6>Experiência: <span class="text-secondary">6 Anos</span></h6></div>
                         <div class="col-sm-6 py-2"><h6>WhatsApp: <span class="text-secondary">(18) 99674-9948</span></h6></div>
@@ -227,8 +236,8 @@
                     </div>
                     <div class="skill mb-4">
                         <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">PHP</h6>
-                            <h6 class="font-weight-bold">65%</h6>
+                            <h6 class="font-weight-bold">UI/UX Design</h6>
+                            <h6 class="font-weight-bold">70%</h6>
                         </div>
                         <div class="progress">
                             <div class="progress-bar bg-3" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
@@ -301,7 +310,7 @@
                         <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>
                         <h4 class="font-weight-bold m-0">Web Design</h4>
                     </div>
-                    <p>Design Gráfico, Email, Banners, Animações, Infográficos e Logotipo. Serviços completos de Web Design.</p>
+                    <p>Design Gráfico, Email, Banners, Animações, Infográficos e Logotipo. Serviços de UI e UX Design.</p>
                     
                 </div>
                 <div class="col-lg-4 col-md-6 text-center mb-5">
@@ -309,14 +318,14 @@
                         <i class="fa fa-2x fa-laptop-code service-icon bg-primary text-white mr-3"></i>
                         <h4 class="font-weight-bold m-0">Programação Web</h4>
                     </div>
-                    <p>Desenvolvimento de Plataformas de Pagamento, Dashboard, Painéis Admnistrativos e Sistemas em Geral.</p> 
+                    <p>Desenvolvimento de Sites, Plataformas de Pagamento, Dashboards, Painéis Admnistrativos e Sistemas em Geral.</p> 
                 </div>
                 <div class="col-lg-4 col-md-6 text-center mb-5">
                     <div class="d-flex align-items-center justify-content-center mb-4">
                         <i class="fab fa-2x fa-apple service-icon bg-primary text-white mr-3"></i>
                         <h4 class="font-weight-bold m-0">Design de Logo</h4>
                     </div>
-                    <p>Criação de Logotipo e Identidade Visual Perfeitos para sua Marca ou Negócio.</p>
+                    <p>Criação de Logos e Identidades Visuais para a Sua Marca ou Negócio.</p>
                   
                 </div>
                 <div class="col-lg-4 col-md-6 text-center mb-5">
@@ -332,7 +341,7 @@
                         <i class="fa fa-2x fa-search service-icon bg-primary text-white mr-3"></i>
                         <h4 class="font-weight-bold m-0">SEO</h4>
                     </div>
-                    <p>SEO e Estratégias para que o Seu Site Alcance Bons Resultados Nos Mecânismos de Busca.</p>
+                    <p>SEO e Estratégias essenciais para o Seu Site Alcançar Bons Resultados Nos Mecânismos de Busca.</p>
                    
                 </div>
                 <div class="col-lg-4 col-md-6 text-center mb-5">
@@ -340,7 +349,7 @@
                         <i class="fa fa-2x fa-shopping-bag service-icon bg-primary text-white mr-3"></i>
                         <h4 class="font-weight-bold m-0">Loja Virtual</h4>
                     </div>
-                    <p>Desenvolvimento de Lojas Virtuais no Woocommerce ou com Programação. Dashboard + Sistema de pagamento.</p>
+                    <p>Lojas e Vitrines Online feitas no Woocommerce ou com Programação. Dashboard + Sistema de pagamento.</p>
                 
                 </div>
             </div>
@@ -377,7 +386,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid rounded w-100" style="height: 210px!important" src="img/portfolio-2.jpg" alt="">
                         <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
@@ -387,7 +396,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid rounded w-100" style="height: 210px!important" src="img/portfolio-8.jpg" alt="">
                         <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
@@ -397,7 +406,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid rounded w-100" style="height: 210px!important" src="img/portfolio-4.jpg" alt="">
                         <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
