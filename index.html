@@ -1,508 +1,669 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <title>Johnny Vasconcelos &mdash; Web Designer</title>
+
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" type="image/x-icon" href="images/fav.ico">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <title>Johnny Vasconcelos - Portfólio</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/jquery-ui.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
 
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/aos.css">
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
 
-    <link rel="stylesheet" href="css/style.css">
-    
-  </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-  
-
-
-  <div class="site-wrap">
-
-    <div class="site-mobile-menu site-navbar-target">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <div class="wrapper" style="overflow-x: hidden!important">
+    <!-- Navbar Start -->
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand ml-lg-3">
+            <h1 class="m-0 display-5"><span class="text-primary">Johnny</span>Vas</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+            <div class="navbar-nav m-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">Sobre</a>
+                <a href="#skill" class="nav-item nav-link">Habilidades</a>
+                <a href="#service" class="nav-item nav-link">Serviços</a>
+                <a href="#portfolio" class="nav-item nav-link">Portfólio</a>
+                <a href="#contact" class="nav-item nav-link">Pacotes</a>
+            </div>
+            <a href="https://api.whatsapp.com/send?phone=5518996749948" target="_blank" class="btn d-none d-lg-block">Contato</a>
         </div>
-      </div>
-      <div class="site-mobile-menu-body"></div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>        
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-   
-    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
-
-      <div class="container-fluid">
-        <div class="row align-items-center justify-content-center">
-          
-          <div class="">
-            <nav class="site-navigation position-relative text-right" role="navigation">
-              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                <li><a href="#home-section" class="nav-link">Home</a></li>
-                <li><a href="#about-section" class="nav-link">Sobre</a></li>
-                <li><a href="#services-section" class="nav-link">Serviços</a></li>
-              </ul>
-            </nav>
-          </div>
-
-          <div class=" text-center mx-5">
-            <h1 class="m-0 site-logo"><a href="index.html">Johnny</a></h1>
-          </div>
-
-          <div class="text-left">
-
-            <nav class="site-navigation position-relative" role="navigation">
-              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                <li><a href="#portfolio-section" class="nav-link">Portfólio</a></li>
-                <li><a href="#blog-section" class="nav-link">Preços</a></li>
-                <li><a href="https://api.whatsapp.com/send?phone=5518997826451&text=Olá, gostaria de criar um site" target="_blank" class="nav-link">Contato</a></li>
-              </ul>
-            </nav>
+    <!-- Video Modal End -->
 
 
-            <div class="d-inline-block d-lg-none" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a></div>
-
-          </div>
-
+    <!-- Header Start -->
+    <div class="container-fluid background d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
+        <div class="container">
+            <div class="row align-items-center">
+                <!--
+                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
+                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/profile.jpg" alt="">
+                </div>
+                --> <div class="col-lg-2"> </div>
+                <div class="col-lg-9 text-center text-lg-left">
+                    <h3 class="text-white font-weight-normal mb-3"> </h3>
+                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff; font-size: 60px!important;">Johnny Vas</h1>
+                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+                    <div class="typed-text d-none">Web Designer, Desenvolvedor Web, Desenvolvedor Front End, UX Designer</div>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+                        <a href="#portfolio" class="btn btn-outline-light mr-5" style="border: 1px solid white!important; color: white!important;">Ver Portfólio</a>
+                        <button type="button" class="btn-play" data-toggle="modal"
+                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModall">
+                            <span></span>
+                        </button>
+                        <h5 class="font-weight-normal text-white m-0 ml-4 d-none d-sm-block">Play Video</h5>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      
-    </header>
+    </div>
+    <!-- Header End -->
 
 
-    <div class="site-blocks-cover overlay bg-light position-relative" id="home-section">
+    <!-- About Start -->
+    <div class="container-fluid py-5" id="about">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Sobre</h1>
+                <h1 class="position-absolute text-uppercase text-primary">QUEM SOU</h1>
+            </div>
+            <div class="row align-items-center">
+                <!--
+                <div class="col-lg-5 pb-4 pb-lg-0">
+                    <img class="img-fluid rounded w-100" src="img/about.jpg" alt="">
+                </div>
+                -->
+                <div class="col-lg-12">
+                    <h3 class="mb-4">Web Designer & Desenvolvedor Web</h3>
+                    <p class="paragrafo">Sou Desenvolvedor Freelancer com experiência em JavaScript, PHP, Vue JS, Node e WordPress. Sou o fundador da Evelore Web Design Agency. Foco principalmente na parte do Front End criando sites, lojas e sistemas para a web. Posso te ajudar a alcançar mais resultados no Digital com sites Responsivos e Otimizados com Alta Qualidade e Performance.</p>
+                    <div class="row mb-3 dados">
+                        <div class="col-sm-6 py-2"><h6>Experiência: <span class="text-secondary">6 Anos</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>WhatsApp: <span class="text-secondary">(18) 99674-9948</span></h6></div>
+                  
+                        <div class="col-sm-6 py-2"><h6>Mora em: <span class="text-secondary">Presidente Prudente, SP</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>WhatsApp: <span class="text-secondary">(18) 99782-6451</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">contato@johnnyvasconcelos.com.br</span></h6></div>
+                  
+                        
+                        <div class="col-sm-6 py-2"><h6>Freelance: <span class="text-secondary">Disponível</span></h6></div>
+                    </div>
+                    <a class="btn mr-4 ocultar">Ocultar</a>
+                    <a href="#portfolio" class="btn">Ver Portfólio</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
 
-      <div class="container">
-        <div class="row position-relative justify-content-center">
 
-          <div class="col-md-12 mt-lg-5 text-left align-self-center text-intro">
+    <!-- Qualification Start -->
+    <!--
+    <div class="container-fluid py-5" id="qualification">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Quality</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Education & Expericence</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3 class="mb-4">My Education</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Master In CSE</h5>
+                            <p class="mb-2"><strong>Cambridge University</strong> | <small>2000 - 2050</small></p>
+                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Master In CSE</h5>
+                            <p class="mb-2"><strong>Cambridge University</strong> | <small>2000 - 2050</small></p>
+                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Master In CSE</h5>
+                            <p class="mb-2"><strong>Cambridge University</strong> | <small>2000 - 2050</small></p>
+                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="mb-4">My Expericence</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Web Designer</h5>
+                            <p class="mb-2"><strong>Soft Company</strong> | <small>2000 - 2050</small></p>
+                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Web Designer</h5>
+                            <p class="mb-2"><strong>Soft Company</strong> | <small>2000 - 2050</small></p>
+                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Web Designer</h5>
+                            <p class="mb-2"><strong>Soft Company</strong> | <small>2000 - 2050</small></p>
+                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    -->
+    <!-- Qualification End -->
+
+
+    <!-- Skill Start -->
+    <div class="container-fluid py-5" id="skill">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">SKILLS</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Minhas Habilidades</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">HTML</h6>
+                            <h6 class="font-weight-bold">95%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-1" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">CSS</h6>
+                            <h6 class="font-weight-bold">90%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-2" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">PHP</h6>
+                            <h6 class="font-weight-bold">65%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-3" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">BootStrap</h6>
+                            <h6 class="font-weight-bold">75%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-4" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Javascript</h6>
+                            <h6 class="font-weight-bold">70%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger bg-5" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Vue JS</h6>
+                            <h6 class="font-weight-bold">65%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-6" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Wordpress</h6>
+                            <h6 class="font-weight-bold">85%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-info bg-7" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Node JS</h6>
+                            <h6 class="font-weight-bold">70%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning bg-8" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Skill End -->
+
+
+    <!-- Services Start -->
+    <div class="container-fluid pt-5" id="service">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">SERVIÇOS</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Meus Serviços</h1>
+            </div>
+            <div class="row pb-3">
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Web Design</h4>
+                    </div>
+                    <p>Design Gráfico, Email, Banners, Animações, Infográficos e Logotipo. Serviços completos de Web Design.</p>
+                    
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-laptop-code service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Programação Web</h4>
+                    </div>
+                    <p>Desenvolvimento de Plataformas de Pagamento, Dashboard, Painéis Admnistrativos e Sistemas em Geral.</p> 
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fab fa-2x fa-apple service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Design de Logo</h4>
+                    </div>
+                    <p>Criação de Logotipo e Identidade Visual Perfeitos para sua Marca ou Negócio.</p>
+                  
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Tema WordPress</h4>
+                    </div>
+                    <p>Desenvolvimento/Instalação de Temas WordPress com BootStrap para Venda ou uso Próprio.</p>
+                   
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-search service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">SEO</h4>
+                    </div>
+                    <p>SEO e Estratégias para que o Seu Site Alcance Bons Resultados Nos Mecânismos de Busca.</p>
+                   
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-shopping-bag service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Loja Virtual</h4>
+                    </div>
+                    <p>Desenvolvimento de Lojas Virtuais no Woocommerce ou com Programação. Dashboard + Sistema de pagamento.</p>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+
+
+    <!-- Portfolio Start -->
+    <div class="container-fluid pt-5 pb-3" id="portfolio">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Galeria</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Meu Portfólio</h1>
+            </div>
             <div class="row">
-              <div class="col-lg-6">
-                <div class="text">
-                <h1 class="text-white">Johnny Vasconcelos</h1>
-                <p class="text-yellow">Web Designer <span class="mx-3">|</span> Desenvolvedor</p>
-                <p class="lead">Desenvolvo Sites e te Ajudo a Alcançar Mais Resultados no Digital. Sites Responsivos e Otimizados com Alta Qualidade e Velocidade.</p>
-                <p><a href="#services-section" class="btn smoothscroll btn-primary text-dark"><strong>Saiba Mais</strong></a></p>
+                <div class="col-12 text-center mb-2">
+                    <ul class="list-inline mb-4" id="portfolio-flters">
+                        <li class="btn btn-sm m-1 active"  data-filter="*">Todos</li>
+                        <li class="btn btn-sm m-1" data-filter=".first">Sites</li>
+                        <li class="btn btn-sm m-1" data-filter=".second">Sistemas</li>
+                        <li class="btn btn-sm m-1" data-filter=".third">Landing Pages</li>
+                    </ul>
                 </div>
-              </div>
             </div>
-          </div>
-            
+            <div class="row portfolio-container">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" style="height: 210px!important" src="img/portfolio-1.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/website-1.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" style="height: 210px!important" src="img/portfolio-2.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/website-2.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" style="height: 210px!important" src="img/portfolio-8.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/website-8.png" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" style="height: 210px!important" src="img/portfolio-4.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/website-4.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" style="height: 210px!important" src="img/portfolio-5.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/website-5.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" style="height: 210px!important" src="img/portfolio-9.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/website-9.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="image">
-      <img src="images/header-2.jpg" alt="Image" class="img-face">
     </div>
-      
-    </div>  
+    <!-- Portfolio End -->
 
-    <div class="site-section bg-light" id="services-section">
-      <div class="container">
-        <div class="row ">
-          <div class="col-12 mb-5 position-relative">
-            <h2 class="section-title text-center mb-5">Serviços</h2>
-          </div>
-    
-          <div class="col-md-6 mb-4">
-            <div class="service d-flex h-100">
-              <div class="service-number mr-4"><span class="icon-globe"></span></div>
-              <div class="service-about">
-                <h3>Página de Vendas</h3>
-                <p>(Landing Page). Desenvolvo uma Página no WordPress usando o Plugin Elementor. Manutenção grátis durante 1 mês.</p>
-              </div>
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-5" id="testimonial">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Avaliações</h1>
+                <h1 class="position-absolute text-uppercase text-primary">O Que os Clientes Dizem</h1>
             </div>
-          </div>
-    
-          <div class="col-md-6 mb-4">
-            <div class="service d-flex h-100">
-              <div class="service-number mr-4"><span class="icon-globe"></span></div>
-              <div class="service-about">
-                <h3>Site Institucional</h3>
-                <p>Site Institucional Simples de até 10 páginas para empresa ou profissional. Entrega de 3 a 7 dias. Manutenção grátis durante 1 mês.</p>
-              </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="text-center">
+                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                            <h4 class="font-weight-light mb-4">Excelente. Fez um trabalho muito bem feito e de forma personalizada e atenciosa!</h4>
+                         
+                            <h5 class="font-weight-bold m-0">ComproCard</h5>
+                            <span>Carteira Digital</span>
+                        </div>
+                        <div class="text-center">
+                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                            <h4 class="font-weight-light mb-4">Meus sites ficaram lindos e com um aspecto melhor do que o combinado. Parabéns.</h4>
+                           
+                            <h5 class="font-weight-bold m-0">Jaqueline Silva</h5>
+                            <span>Farmacêutica</span>
+                        </div>
+                        <div class="text-center">
+                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                            <h4 class="font-weight-light mb-4">Grande homem, Johnny. Fez tudo o que eu pedi e mais. Muito paciente.</h4>
+                   
+                            <h5 class="font-weight-bold m-0">José - Digital Lightning</h5>
+                            <span>Professor</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-    
-          <div class="col-md-6 mb-4">
-            <div class="service d-flex h-100">
-              <div class="service-number mr-4"><span class="icon-shop"></span></div>
-              <div class="service-about">
-                <h3>Loja Virtual</h3>
-                <p>Loja Virtual (ecommerce). Desenvolvo uma loja de 7 a 20 dias. Manutenção grátis durante 3 meses.</p>
-              </div>
-            </div>
-          </div>
-    
-          <div class="col-md-6 mb-4">
-            <div class="service d-flex h-100">
-              <div class="service-number mr-4"><span class="icon-code"></span></div>
-              <div class="service-about">
-                <h3>Tema WordPress</h3>
-                <p>Desenvolvo um Tema WordPress personalizado com PHP e BootStrap 5. Ofereço suporte e manutenção durante 3 meses após a compra.</p>
-              </div>
-            </div>
-          </div>
-    
         </div>
-      </div>
     </div>
+    <!-- Testimonial End -->
 
 
-
-    <div class="site-section" id="about-section">
-      <div class="container">
-        <div class="row ">
-          <div class="col-12 mb-4 position-relative">
-            <h2 class="section-title">Minhas Habilidades</h2>
-          </div>
-          <div class="col-lg-6 order-3 pl-lg-5 order-lg-2">
-            <div class="mb-5">
-              <strong class="text-black">HTML / CSS</strong>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"
-                  style="width: 89%;">
-                  <span>89%</span>
-                </div>
-              </div>
+    <!-- Blog Start -->
+    <!--
+    <div class="container-fluid pt-5" id="blog">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Blog</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Latest Blog</h1>
             </div>
-            <div class="mb-5">
-              <strong class="text-black">WordPress</strong>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"
-                  style="width: 72%;">
-                  <span>72%</span>
-                </div>
-              </div>
-            </div>
-            <div class="mb-5">
-              <strong class="text-black">JavaScript</strong>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"
-                  style="width: 70%;">
-                  <span>70%</span>
-                </div>
-              </div>
-            </div>
-            <div class="mb-5">
-              <strong class="text-black">XML</strong>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"
-                  style="width: 81%;">
-                  <span>81%</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 order-3 pl-lg-5 order-lg-2">
-            <div class="mb-5">
-              <strong class="text-black">PHP</strong>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"
-                  style="width: 69%;">
-                  <span>69%</span>
-                </div>
-              </div>
-            </div>
-            <div class="mb-5">
-              <strong class="text-black">Angular</strong>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"
-                  style="width: 60%;">
-                  <span>60%</span>
-                </div>
-              </div>
-            </div>
-            <div class="mb-5">
-              <strong class="text-black">MySQL</strong>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"
-                  style="width: 61%;">
-                  <span>61%</span>
-                </div>
-              </div>
-            </div>
-            <div class="mb-5">
-              <strong class="text-black">BootStrap</strong>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"
-                  style="width: 70%;">
-                  <span>70%</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>  
-
-    <section class="site-section block__62272 bg-gray" id="portfolio-section">
-      
-
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-12 position-relative">
-            <h2 class="section-title text-center mb-5">Trabalhos Recentes</h2>
-          </div>
-        </div>
-
-
-        <div class="row">
-          <div class="col-md-6 col-lg-4 item">
-            <a href="images/aquarius website.jpg" class="item-wrap fancybox mb-4">
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/website8.jpg">
-            </a>
-            <a href="images/lar-moveis.jpg" class="item-wrap fancybox mb-4">
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/capa lar moveis.jpg">
-            </a>
-            
-          </div>
-          <div class="col-md-6 col-lg-4 item">
-            <a href="images/sao-germano.jpg" class="item-wrap fancybox mb-4">
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/website2.jpg">
-            </a>
-            <a href="images/Ana Amaral Website.jpg" class="item-wrap fancybox mb-4">
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/website7.jpg">
-            </a>
-         
-          </div>
-          <div class="col-md-6 col-lg-4 item">
-            <a href="images/bom-de-garfo.jpg" class="item-wrap fancybox mb-4">
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/website1.jpg">
-            </a>
-            <a href="images/autonomia.jpg" class="item-wrap fancybox mb-4">
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/website3.jpg">
-            </a>
-          </div>
-        </div>
-
-        
-      </div>
-
-    </section>
-
-
-    <section class="site-section bg-primary">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 mb-5 position-relative">
-            <h2 class="section-title text-center mb-5 text-white">O que os Clientes Dizem</h2>
-          </div>
-        </div>
-        <div class="owl-carousel slide-one-item">
-          <div class="slide">
-            <blockquote>
-              <p>Excelente. Fez um trabalho muito bem feito, rápido e de forma personalizada e atenciosa!</p>
-              <p><cite>&mdash; ComproCard</cite></p>
-            </blockquote>
-          </div>
-          <div class="slide">
-            <blockquote>
-              <p>Meus sites ficaram lindos e com um aspecto melhor do que o combinado. Parabéns.</p>
-              <p><cite>&mdash; Jaqueline Silva</cite></p>
-            </blockquote>
-          </div>
-          <div class="slide">
-            <blockquote>
-              <p>Grande homem, Johnny. fez tudo que eu pedi e mais, muito paciente.</p>
-              <p><cite>&mdash; Joe Thompson</cite></p>
-            </blockquote>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    
-
-    <section class="site-section m-auto bg-light" id="blog-section">
-      <div class="container m-auto">
-        <div class="row m-auto d-flex flex-wrap justify-content-center">
-          
-          <div class="col-12 mb-5 position-relative m-auto">
-            <h2 class="section-title text-center mb-5">Preços</h2>
-          </div>
-          <div class="col-sm-5 col-md-3 m-auto mb-3">
-          <div class="card text-center" style="width: 18rem;">
-            <img src="images/internet.png" class="d-block m-auto card-img-top">
-            <div class="card-body">
-              <h5 class="card-title">Página de Vendas</h5>
-              <h6 class="card-subtitle">R$ 490 <span>(2x R$ 245)</span></h6>
-                <p class="card-text">Google Analytics</p>
-                <p class="card-text">Logotipo Profissional</p>
-                  <p class="card-text">Email Profissional</p>
-                    <p class="card-text">Suporte e Manutenção</p>
-              <a href="https://api.whatsapp.com/send?phone=5518997826451&text=Ol%C3%A1,%20gostaria%20de%20criar%20uma%20p%C3%A1gina%20de%20vendas" class="btn btn-primary text-dark" target="_blank">Escolher Plano</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-5 col-md-3 m-auto mb-3">
-          <div class="card card-dest text-center" style="width: 18rem;">
-            <img src="images/internet.png" class="d-block m-auto card-img-top">
-            <div class="card-body">
-              <h5 class="card-title">Site Institucional</h5>
-              <h6 class="card-subtitle">R$ 690 <span>(2x R$ 345)</span></h6>
-              <p class="card-text">Google Analytics</p>
-              <p class="card-text">Logotipo Profissional</p>
-                <p class="card-text">Email Profissional</p>
-                <p class="card-text">Suporte e Manutenção</p>
-              <a href="https://api.whatsapp.com/send?phone=5518997826451&text=Olá, gostaria de criar um site institucional" class="btn btn-primary text-dark" target="_blank">Escolher Plano</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-5 col-md-3 m-auto mb-3">
-          <div class="card text-center" style="width: 18rem;">
-            <img src="images/internet.png" class="d-block m-auto card-img-top">
-            <div class="card-body">
-              <h5 class="card-title">Loja Virtual</h5>
-              <h6 class="card-subtitle">R$ 1500 <span>(2x R$ 750)</span></h6>
-              <p class="card-text">Google Analytics</p>
-              <p class="card-text">Logotipo Profissional</p>
-                <p class="card-text">Email Profissional</p>
-                <p class="card-text">Suporte e Manutenção</p>
-              <a href="https://api.whatsapp.com/send?phone=5518997826451&text=Olá, gostaria de criar uma loja virtual" class="btn btn-primary text-dark" target="_blank">Escolher Plano</a>
-            </div>
-          </div>
-        </div>
-   
-        </div>
-      </div>
-    </section>
-
-
-    <section style="display:none;" class="site-section bg-primary" id="contact-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 mb-5 position-relative">
-            <h2 class="section-title text-center text-white mb-5">Say Hello</h2>
-          </div>
-        </div>
-        <form action="#" class="form">
-          <div class="row mb-4">
-            <div class="form-group col-6">
-              <input type="text" class="form-control" placeholder="First name">
-            </div>
-            <div class="form-group col-6">
-              <input type="text" class="form-control" placeholder="Full name">
-            </div>
-          </div>
-
-          <div class="row mb-4">
-            <div class="form-group col-12">
-              <input type="email" class="form-control" placeholder="Email address">
-            </div>
-          </div>
-
-          <div class="row mb-4">
-            <div class="form-group col-12">
-              <input type="text" class="form-control" placeholder="Subject of the message">
-            </div>
-          </div>
-
-          <div class="row mb-4">
-            <div class="form-group col-12">
-              <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Type your message here.."></textarea>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-6">
-              <input type="submit" class="btn btn-dark" value="Send Message">
-            </div>
-          </div>
-          
-        </form>
-      </div>
-    </section>
-
-    <footer class="site-section bg-light footer">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-md-3">
-            <h3 class="footer-title">Johnny Vasconcelos</h3>
-            <p>Web Designer e Desenvolvedor Web.</p>
-            <p><span class="d-inline-block d-md-block">Presidente Prudente, São Paulo, Brasil</span></p>
-          </div>
-          <div class="col-md-5 mx-auto">
             <div class="row">
-              <div class="col-lg-4">
-                <h3 class="footer-title">Serviços</h3>
-                <ul class="list-unstyled">
-                  <li><a href="https://api.whatsapp.com/send?phone=5518997826451&text=Ol%C3%A1,%20gostaria%20de%20criar%20uma%20p%C3%A1gina%20de%20vendas" target="_blank">Página de Vendas</a></li>
-                  <li><a href="https://api.whatsapp.com/send?phone=5518997826451&text=Ol%C3%A1,%20gostaria%20de%20criar%20um%20site%20institucional" target="_blank">Site Institucional</a></li>
-                  <li><a href="https://api.whatsapp.com/send?phone=5518997826451&text=Ol%C3%A1,%20gostaria%20de%20criar%20uma%20loja%20virtual" target="_blank">Loja Virtual</a></li>
-                  <li><a href="https://api.whatsapp.com/send?phone=5518997826451&text=Ol%C3%A1%2C%20gostaria%20de%20um%20Tema%20WordPress" target="_blank">Tema WordPress</a></li>
-                </ul>
-              </div>
-              <div class="col-lg-4">
-                <h3 class="footer-title">Recursos</h3>
-                <ul class="list-unstyled">
-                  <li>HTML</li>
-                  <li>PHP</li>
-                  <li>WordPress</li>
-                </ul>
-              </div>
-              <div class="col-lg-4">
-                <h3 class="footer-title">Menu</h3>
-                <ul class="list-unstyled">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#services-section">Serviços</a></li>
-                  <li><a href="#portfolio-section">Portfólio</a></li>
-                </ul>
-              </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded w-100" src="img/blog-1.jpg" alt="">
+                        <div class="blog-date">
+                            <h4 class="font-weight-bold mb-n1">01</h4>
+                            <small class="text-white text-uppercase">Jan</small>
+                        </div>
+                    </div>
+                    <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum</h5>
+                    <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded w-100" src="img/blog-2.jpg" alt="">
+                        <div class="blog-date">
+                            <h4 class="font-weight-bold mb-n1">01</h4>
+                            <small class="text-white text-uppercase">Jan</small>
+                        </div>
+                    </div>
+                    <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum</h5>
+                    <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded w-100" src="img/blog-3.jpg" alt="">
+                        <div class="blog-date">
+                            <h4 class="font-weight-bold mb-n1">01</h4>
+                            <small class="text-white text-uppercase">Jan</small>
+                        </div>
+                    </div>
+                    <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum</h5>
+                    <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
+                </div>
             </div>
-          </div>
-          <div class="col-md-3">
-            <h3 class="footer-title">Social</h3>
-            <a href="https://github.com/johnnyvasconcelos" target="_blank" class="social-circle p-2"><span class="icon-github"></span></a>
-            <a href="#" class="social-circle p-2"><span class="icon-linkedin"></span></a>
-            <a href="#" class="social-circle p-2"><span class="icon-instagram"></span></a>
-            <a href="https://api.whatsapp.com/send?phone=5518997826451" target="_blank" class="social-circle p-2"><span class="icon-whatsapp"></span></a>
-          </div>
         </div>
+    </div>
+    -->
 
-        <div class="row">
-          <div class="col-12 text-center">
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            <p>Copyright &copy;
-            <script>document.write(new Date().getFullYear());</script> - Todos os Direitos Reservados</p>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            
-          </div>
+    <!-- Blog End -->
+
+
+    <!-- Contact Start -->
+    <div class="container-fluid py-5" id="contact">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">PREÇOS</h1>
+                <h1 class="position-absolute text-uppercase text-primary">PACOTES</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="contact-form text-center">
+                        <div id="success"></div>
+                        <div class="pacotes d-flex flex-wrap">
+                            <div class="pacote">
+                                <div class="ico">
+                                <img src="img/icon.png" alt="">
+                                </div>
+                                <h2>Landing Page</h2>
+                                <h3>R$ 1160 (2x R$ 624)</h3>
+                                <div class="lista">
+                                    <div class="item">Logo e Identidade Visual</div>
+                                    <div class="item">Domínio e Hospedagem</div>
+                                    <div class="item">Suporte e Manutenção</div>
+                                    <div class="item">Email Profissional</div>
+                                </div>
+                                <button class="btn" type="submit" id="sendMessageButton"><a href="https://api.whatsapp.com/send?phone=5518996749948" target="_blank">Escolher Pacote</a></button>
+                            </div>
+
+                            <div class="pacote">
+                                <div class="ico">
+                                    <img src="img/icon.png" alt="">
+                                </div>
+                                <h2>Site Institucional</h2>
+                                <h3>R$ 560 (2x R$ 300)</h3>
+                                <div class="lista">
+                                    <div class="item">Logo e Identidade Visual</div>
+                                    <div class="item">Domínio e Hospedagem</div>
+                                    <div class="item">Suporte e Manutenção</div>
+                                    <div class="item">Email Profissional</div>
+                                </div>
+                                <button class="btn" type="submit" id="sendMessageButton"><a href="https://api.whatsapp.com/send?phone=5518996749948" target="_blank">Escolher Pacote</a></button>
+                            </div>
+
+                            <div class="pacote">
+                                <div class="ico">
+                                    <img src="img/icon.png" alt="">
+                                </div>
+                                <h2>Loja Virtual</h2>
+                                <h3>R$ 830 (2x R$ 446)</h3>
+                                <div class="lista">
+                                    <div class="item">Logo e Identidade Visual</div>
+                                    <div class="item">Domínio e Hospedagem</div>
+                                    <div class="item">Suporte e Manutenção</div>
+                                    <div class="item">Email Profissional</div>
+                                </div>
+                                <button class="btn" type="submit" id="sendMessageButton"><a href="https://api.whatsapp.com/send?phone=5518996749948" target="_blank">Escolher Pacote</a></button>
+                            </div>
+                        </div>
+                        <!--
+                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                            <div class="form-row">
+                                <div class="control-group col-sm-6">
+                                    <input type="text" class="form-control p-4" id="name" placeholder="Your Name"
+                                        required="required" data-validation-required-message="Please enter your name" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group col-sm-6">
+                                    <input type="email" class="form-control p-4" id="email" placeholder="Your Email"
+                                        required="required" data-validation-required-message="Please enter your email" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <input type="text" class="form-control p-4" id="subject" placeholder="Subject"
+                                    required="required" data-validation-required-message="Please enter a subject" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
+                                    required="required"
+                                    data-validation-required-message="Please enter your message"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div>
+                                <button class="btn btn-outline-primary" type="submit" id="sendMessageButton">Send
+                                    Message</button>
+                            </div>
+                        </form>
+                        -->
+                       
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </footer>
+    </div>
+    <!-- Contact End -->
 
-  </div> <!-- .site-wrap -->
 
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery-ui.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.fancybox.min.js"></script>
-  <script src="js/jquery.sticky.js"></script>
-  
-  <script src="js/main.js"></script>
+    <!-- Footer Start -->
+    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="container text-center py-5">
+            <div class="d-flex justify-content-center mb-4">
+                <a class="btn btn-light btn-social mr-2" href="https://github.com/johnnyvasconcelos" target="_blank"><i class="fab fa-github"></i></a>
+                <a class="btn btn-light btn-social mr-2" target="_blank" href="https://api.whatsapp.com/send?phone=5518996749948"><i class="fab fa-whatsapp"></i></a>
+                <a class="btn btn-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="d-flex justify-content-center mb-3">
+                <a class="text-white" href="#">Privacidade</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">Termos</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">FAQs</a>
+            </div>
+            <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">Johnny Vasconcelos</a>. Todos os Direitos Reservados. Designed by <a class="text-white font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
+            </p>
+        </div>
+    </div>
+    
+    <!-- Footer End -->
 
-  
-  </body>
+    <!-- Scroll to Bottom -->
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+</div>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
 </html>
